@@ -78,9 +78,10 @@ class Navigator extends BasicComponent {
     }
 
     return new Promise((resolve) => {
+      var currentRoute = this.routes[this.routes.length - 1];
       var lastRoute = routes[routes.length - 1];
       var newPage = this.props.renderPage(lastRoute, this);
-      this.routes.push(lastRoute);
+      this.routes = [currentRoute, ...routes];
 
       const update = () => {
         this.pages.push(newPage);
