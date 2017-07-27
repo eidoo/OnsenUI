@@ -282,7 +282,7 @@ export default class InputElement extends BaseElement {
   }
 
   _updateLabelClass() {
-    if (this.value === '') {
+    if (this.value === '' && this._input.validity.valid) {
       this._helper.classList.remove('text-input--material__label--active');
     }
     else if (['checkbox', 'radio'].indexOf(this.getAttribute('type')) === -1){
