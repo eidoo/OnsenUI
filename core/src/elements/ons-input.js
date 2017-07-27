@@ -109,7 +109,7 @@ export default class InputElement extends BaseInputElement {
   }
 
   _updateLabelClass() {
-    if (this.value === '') {
+    if (this.value === '' && this._input.validity.valid) {
       this._helper.classList.remove('text-input--material__label--active');
     } else {
       this._helper.classList.add('text-input--material__label--active');
