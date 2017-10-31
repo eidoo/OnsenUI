@@ -1,6 +1,7 @@
 import React from 'react';
 import BasicComponent from './BasicComponent.jsx';
 import Util from './Util.js';
+import PropTypes from 'prop-types';
 
 /**
  * @original ons-navigator
@@ -321,7 +322,7 @@ Navigator.propTypes = {
    *  [en] This function takes the current route object as a parameter and  creates returns a React component.[/en]
    *  [jp] どうしよう[/jp]
    */
-  renderPage: React.PropTypes.func.isRequired,
+  renderPage: PropTypes.func.isRequired,
   /**
    * @name initialRouteStack
    * @type array
@@ -333,7 +334,7 @@ Navigator.propTypes = {
    *  [/en]
    *  [jp] どうしよう[/jp]
    */
-  initialRouteStack: React.PropTypes.array,
+  initialRouteStack: PropTypes.array,
 
   /**
    * @name initialRoute
@@ -347,7 +348,7 @@ Navigator.propTypes = {
    *  [/en]
    *  [jp] どうしよう[/jp]
    */
-  initialRoute: React.PropTypes.object,
+  initialRoute: PropTypes.object,
 
   /**
    * @name onPrePush
@@ -356,7 +357,7 @@ Navigator.propTypes = {
    * @description
    *  [en]Called just before a page is pushed.[/en]
    */
-  onPrePush: React.PropTypes.func,
+  onPrePush: PropTypes.func,
 
   /**
    * @name onPostPush
@@ -365,7 +366,7 @@ Navigator.propTypes = {
    * @description
    *  [en]Called just after a page is pushed.[/en]
    */
-  onPostPush: React.PropTypes.func,
+  onPostPush: PropTypes.func,
 
   /**
    * @name onPrePop
@@ -374,7 +375,7 @@ Navigator.propTypes = {
    * @description
    *  [en]Called just before a page is popped.[/en]
    */
-  onPrePop: React.PropTypes.func,
+  onPrePop: PropTypes.func,
 
   /**
    * @name onPostPop
@@ -383,7 +384,7 @@ Navigator.propTypes = {
    * @description
    *  [en]Called just after a page is popped.[/en]
    */
-  onPostPop: React.PropTypes.func,
+  onPostPop: PropTypes.func,
 
   /**
    * @name animation
@@ -394,7 +395,7 @@ Navigator.propTypes = {
    *     These are platform based animations. For fixed animations, add `"-ios"` or `"-md"` suffix to the animation name. E.g. `"lift-ios"`, `"lift-md"`. Defaults values are `"slide-ios"` and `"fade-md"`.
    *   [/en]
    */
-  animation: React.PropTypes.string,
+  animation: PropTypes.string,
 
   /**
    * @name animationOptions
@@ -403,7 +404,7 @@ Navigator.propTypes = {
    *  [en]Specify the animation's duration, delay and timing. E.g.  `{duration: 0.2, delay: 0.4, timing: 'ease-in'}`.[/en]
    *  [jp] [/jp]
    */
-  animationOptions: React.PropTypes.object,
+  animationOptions: PropTypes.object,
 
   /**
    * @name onDeviceBackButton
@@ -415,7 +416,7 @@ Navigator.propTypes = {
    *  [/en]
    *  [jp] どうしよう[/jp]
    */
-  onDeviceBackButton: React.PropTypes.func
+  onDeviceBackButton: PropTypes.func
 };
 
 const NOOP = () => null;

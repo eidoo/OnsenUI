@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SimpleWrapper from './SimpleWrapper.jsx';
+import PropTypes from 'prop-types';
 
 /**
  * @original ons-splitter
@@ -62,7 +63,7 @@ Splitter.propTypes = {
    *  [/en]
    *  [jp] どうしよう[/jp]
    */
-  onDeviceBackButton: React.PropTypes.func
+  onDeviceBackButton: PropTypes.func
 };
 
 export default Splitter;

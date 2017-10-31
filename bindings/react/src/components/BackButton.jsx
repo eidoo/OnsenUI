@@ -1,6 +1,7 @@
 import SimpleWrapper from './SimpleWrapper.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 /**
  * @original ons-back-button
@@ -52,7 +53,7 @@ BackButton.propTypes = {
    *  [en]The appearance of the back button.[/en]
    *  [jp][/jp]
    */
-  modifier: React.PropTypes.string,
+  modifier: PropTypes.string,
 
   /**
    * @name onClick
@@ -61,7 +62,7 @@ BackButton.propTypes = {
    *  [en]This function will be called ones the button is clicked. It overrides the default behavior of the back button.[/en]
    *  [jp][/jp]
    */
-  onClick: React.PropTypes.func
+  onClick: PropTypes.func
 };
 
 export default BackButton;

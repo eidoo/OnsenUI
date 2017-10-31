@@ -1,6 +1,7 @@
 import SimpleWrapper from './SimpleWrapper.jsx';
 import React from 'react';
 import Util from './Util.js';
+import PropTypes from 'prop-types';
 
 /**
  * @original ons-col
@@ -42,7 +43,7 @@ Col.propTypes = {
   *   [en]Short hand attribute for aligning vertically. Valid values are top, bottom, and center.[/en]
   *   [ja][/ja]
   */
-  verticalAlign: React.PropTypes.oneOf(['top', 'bottom', 'center']),
+  verticalAlign: PropTypes.oneOf(['top', 'bottom', 'center']),
 
   /**
   * @name width
@@ -51,7 +52,7 @@ Col.propTypes = {
   *   [en]The width of the column. Valid values are css width values ("10%", 50).[/en]
   *   [ja][/ja]
   */
-  width: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.string])
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
 
 export default Col;
