@@ -50,7 +50,9 @@ const INPUT_ATTRIBUTES = [
   'step',
   'type',
   'validator',
-  'value'
+  'value',
+  'decimal',
+  'decimal-char'
 ];
 
 /**
